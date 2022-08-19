@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CryptoAPI
+@_exported import CryptoAPI
+import Foundation
+import Swift
+import _Concurrency
+public protocol CryptoDelegate : AnyObject {
+  func cryptoAPIDidConnect()
+  func cryptoAPIDidUpdateCoin(_ coin: CryptoAPI.Coin)
+  func cryptoAPIDidDisconnect()
+}
+public enum CryptoError : Swift.Error {
+  case connectAfter(date: Foundation.Date)
+}
+final public class Crypto {
+  public init(delegate: CryptoAPI.CryptoDelegate)
+  final public func getAllCoins() -> [CryptoAPI.Coin]
+  final public func connect() -> Swift.Result<Swift.Bool, Swift.Error>
+  final public func disconnect()
+  @objc deinit
+}
+public struct Coin {
+  public let name: Swift.String
+  public let code: Swift.String
+  public let price: Swift.Double
+  public let imageUrl: Swift.String?
+}
