@@ -23,6 +23,7 @@ class AppCoordinator {
     // MARK: - Internal functions
     
     func start() {
+        navigationController.navigationBar.prefersLargeTitles = true
         showMainViewController()
     }
     
