@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC00B6CF28B249C600B29F42 /* CoinPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00B6CE28B249C600B29F42 /* CoinPriceView.swift */; };
+		CC00B6D228B2546400B29F42 /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = CC00B6D128B2546400B29F42 /* CombineDataSources */; };
+		CC00B6D528B26A2A00B29F42 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00B6D428B26A2A00B29F42 /* Coordinator.swift */; };
 		CC39235728AFA1A000B644DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39235628AFA1A000B644DD /* AppDelegate.swift */; };
 		CC39235928AFA1A000B644DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39235828AFA1A000B644DD /* SceneDelegate.swift */; };
-		CC39235B28AFA1A000B644DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39235A28AFA1A000B644DD /* ViewController.swift */; };
-		CC39235E28AFA1A000B644DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39235C28AFA1A000B644DD /* Main.storyboard */; };
 		CC39236028AFA1A900B644DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC39235F28AFA1A900B644DD /* Assets.xcassets */; };
 		CC39236328AFA1A900B644DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39236128AFA1A900B644DD /* LaunchScreen.storyboard */; };
 		CC39236D28AFA21E00B644DD /* CryptoAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC39236B28AFA20100B644DD /* CryptoAPI.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CC39236E28AFA21E00B644DD /* CryptoAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC39236B28AFA20100B644DD /* CryptoAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC4358C928B0F3260067B42F /* Results+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4358C828B0F3260067B42F /* Results+Extensions.swift */; };
+		CC488AF828B0EB0400C8DE50 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC488AF728B0EB0400C8DE50 /* Double+Extensions.swift */; };
 		CC6D8D9328AFB101004956A2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CC6D8D9228AFB101004956A2 /* Realm */; };
 		CC6D8D9528AFB101004956A2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC6D8D9428AFB101004956A2 /* RealmSwift */; };
 		CC6D8D9828AFB154004956A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC6D8D9728AFB154004956A2 /* SnapKit */; };
+		CC6D8D9E28AFB6F1004956A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8D9D28AFB6F1004956A2 /* MainViewController.swift */; };
+		CC6D8DA128AFB718004956A2 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DA028AFB718004956A2 /* MainViewControllerViewModel.swift */; };
+		CC6D8DA328AFC1ED004956A2 /* MainViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DA228AFC1ED004956A2 /* MainViewControllerUI.swift */; };
+		CC6D8DA628AFC616004956A2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DA528AFC616004956A2 /* UIView+Extensions.swift */; };
+		CC6D8DAA28AFC711004956A2 /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DA928AFC711004956A2 /* CoinCollectionViewCell.swift */; };
+		CC6D8DAD28AFC9B7004956A2 /* CoinCollectionViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DAC28AFC9B7004956A2 /* CoinCollectionViewUI.swift */; };
+		CC6D8DB028AFD333004956A2 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DAF28AFD333004956A2 /* UIImageView+Extensions.swift */; };
+		CC6D8DB328AFD959004956A2 /* LimitPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DB228AFD959004956A2 /* LimitPriceView.swift */; };
+		CC6D8DB628B0DA74004956A2 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DB528B0DA74004956A2 /* DataBaseManager.swift */; };
+		CC6D8DB928B0DB1E004956A2 /* CoinDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8DB828B0DB1E004956A2 /* CoinDataBaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,15 +48,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC00B6CE28B249C600B29F42 /* CoinPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPriceView.swift; sourceTree = "<group>"; };
+		CC00B6D428B26A2A00B29F42 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CC39235328AFA1A000B644DD /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39235628AFA1A000B644DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC39235828AFA1A000B644DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC39235A28AFA1A000B644DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC39235D28AFA1A000B644DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC39235F28AFA1A900B644DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC39236228AFA1A900B644DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC39236428AFA1A900B644DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC39236B28AFA20100B644DD /* CryptoAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CryptoAPI.xcframework; sourceTree = "<group>"; };
+		CC4358C828B0F3260067B42F /* Results+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Extensions.swift"; sourceTree = "<group>"; };
+		CC488AF728B0EB0400C8DE50 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		CC6D8D9D28AFB6F1004956A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC6D8DA028AFB718004956A2 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
+		CC6D8DA228AFC1ED004956A2 /* MainViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUI.swift; sourceTree = "<group>"; };
+		CC6D8DA528AFC616004956A2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CC6D8DA928AFC711004956A2 /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC6D8DAC28AFC9B7004956A2 /* CoinCollectionViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewUI.swift; sourceTree = "<group>"; };
+		CC6D8DAF28AFD333004956A2 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		CC6D8DB228AFD959004956A2 /* LimitPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitPriceView.swift; sourceTree = "<group>"; };
+		CC6D8DB528B0DA74004956A2 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		CC6D8DB828B0DB1E004956A2 /* CoinDataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataBaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +78,7 @@
 			files = (
 				CC6D8D9528AFB101004956A2 /* RealmSwift in Frameworks */,
 				CC6D8D9828AFB154004956A2 /* SnapKit in Frameworks */,
+				CC00B6D228B2546400B29F42 /* CombineDataSources in Frameworks */,
 				CC6D8D9328AFB101004956A2 /* Realm in Frameworks */,
 				CC39236D28AFA21E00B644DD /* CryptoAPI.xcframework in Frameworks */,
 			);
@@ -61,6 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC00B6CD28B249B500B29F42 /* CoinPriceView */ = {
+			isa = PBXGroup;
+			children = (
+				CC00B6CE28B249C600B29F42 /* CoinPriceView.swift */,
+			);
+			path = CoinPriceView;
+			sourceTree = "<group>";
+		};
+		CC00B6D328B26A1E00B29F42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CC00B6D428B26A2A00B29F42 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		CC39234A28AFA1A000B644DD = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +122,16 @@
 		CC39235528AFA1A000B644DD /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CC00B6D328B26A1E00B29F42 /* Coordinator */,
+				CC6D8DB728B0DAD7004956A2 /* DataBaseModels */,
+				CC6D8DB428B0DA67004956A2 /* Managers */,
+				CC6D8DAE28AFCCF5004956A2 /* CustomViews */,
+				CC6D8DA828AFC6FC004956A2 /* UICollectionViewCells  */,
+				CC6D8D9C28AFB6CD004956A2 /* MainViewController */,
+				CC6D8DA428AFC603004956A2 /* Extensions */,
 				CC39236A28AFA1E100B644DD /* Frameworks */,
 				CC39235628AFA1A000B644DD /* AppDelegate.swift */,
 				CC39235828AFA1A000B644DD /* SceneDelegate.swift */,
-				CC39235A28AFA1A000B644DD /* ViewController.swift */,
-				CC39235C28AFA1A000B644DD /* Main.storyboard */,
 				CC39235F28AFA1A900B644DD /* Assets.xcassets */,
 				CC39236128AFA1A900B644DD /* LaunchScreen.storyboard */,
 				CC39236428AFA1A900B644DD /* Info.plist */,
@@ -98,6 +145,77 @@
 				CC39236B28AFA20100B644DD /* CryptoAPI.xcframework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6D8D9C28AFB6CD004956A2 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8D9D28AFB6F1004956A2 /* MainViewController.swift */,
+				CC6D8DA228AFC1ED004956A2 /* MainViewControllerUI.swift */,
+				CC6D8DA028AFB718004956A2 /* MainViewControllerViewModel.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		CC6D8DA428AFC603004956A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DA528AFC616004956A2 /* UIView+Extensions.swift */,
+				CC6D8DAF28AFD333004956A2 /* UIImageView+Extensions.swift */,
+				CC488AF728B0EB0400C8DE50 /* Double+Extensions.swift */,
+				CC4358C828B0F3260067B42F /* Results+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC6D8DA828AFC6FC004956A2 /* UICollectionViewCells  */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DAB28AFC717004956A2 /* CoinCollectionViewCell */,
+			);
+			path = "UICollectionViewCells ";
+			sourceTree = "<group>";
+		};
+		CC6D8DAB28AFC717004956A2 /* CoinCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DA928AFC711004956A2 /* CoinCollectionViewCell.swift */,
+				CC6D8DAC28AFC9B7004956A2 /* CoinCollectionViewUI.swift */,
+			);
+			path = CoinCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CC6D8DAE28AFCCF5004956A2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CC00B6CD28B249B500B29F42 /* CoinPriceView */,
+				CC6D8DB128AFD946004956A2 /* LimitPriceView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CC6D8DB128AFD946004956A2 /* LimitPriceView */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DB228AFD959004956A2 /* LimitPriceView.swift */,
+			);
+			path = LimitPriceView;
+			sourceTree = "<group>";
+		};
+		CC6D8DB428B0DA67004956A2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DB528B0DA74004956A2 /* DataBaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CC6D8DB728B0DAD7004956A2 /* DataBaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D8DB828B0DB1E004956A2 /* CoinDataBaseModel.swift */,
+			);
+			path = DataBaseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +239,7 @@
 				CC6D8D9228AFB101004956A2 /* Realm */,
 				CC6D8D9428AFB101004956A2 /* RealmSwift */,
 				CC6D8D9728AFB154004956A2 /* SnapKit */,
+				CC00B6D128B2546400B29F42 /* CombineDataSources */,
 			);
 			productName = CryptoApp;
 			productReference = CC39235328AFA1A000B644DD /* CryptoApp.app */;
@@ -153,6 +272,7 @@
 			packageReferences = (
 				CC6D8D9128AFB101004956A2 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				CC6D8D9628AFB154004956A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CC00B6D028B2546400B29F42 /* XCRemoteSwiftPackageReference "CombineDataSources" */,
 			);
 			productRefGroup = CC39235428AFA1A000B644DD /* Products */;
 			projectDirPath = "";
@@ -170,7 +290,6 @@
 			files = (
 				CC39236328AFA1A900B644DD /* LaunchScreen.storyboard in Resources */,
 				CC39236028AFA1A900B644DD /* Assets.xcassets in Resources */,
-				CC39235E28AFA1A000B644DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,23 +300,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC39235B28AFA1A000B644DD /* ViewController.swift in Sources */,
+				CC00B6D528B26A2A00B29F42 /* Coordinator.swift in Sources */,
+				CC6D8DB328AFD959004956A2 /* LimitPriceView.swift in Sources */,
+				CC488AF828B0EB0400C8DE50 /* Double+Extensions.swift in Sources */,
+				CC6D8DA628AFC616004956A2 /* UIView+Extensions.swift in Sources */,
+				CC6D8DA128AFB718004956A2 /* MainViewControllerViewModel.swift in Sources */,
 				CC39235728AFA1A000B644DD /* AppDelegate.swift in Sources */,
+				CC6D8DB028AFD333004956A2 /* UIImageView+Extensions.swift in Sources */,
+				CC6D8DAD28AFC9B7004956A2 /* CoinCollectionViewUI.swift in Sources */,
+				CC6D8DAA28AFC711004956A2 /* CoinCollectionViewCell.swift in Sources */,
+				CC4358C928B0F3260067B42F /* Results+Extensions.swift in Sources */,
 				CC39235928AFA1A000B644DD /* SceneDelegate.swift in Sources */,
+				CC6D8D9E28AFB6F1004956A2 /* MainViewController.swift in Sources */,
+				CC6D8DB928B0DB1E004956A2 /* CoinDataBaseModel.swift in Sources */,
+				CC6D8DA328AFC1ED004956A2 /* MainViewControllerUI.swift in Sources */,
+				CC6D8DB628B0DA74004956A2 /* DataBaseManager.swift in Sources */,
+				CC00B6CF28B249C600B29F42 /* CoinPriceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC39235C28AFA1A000B644DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC39235D28AFA1A000B644DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC39236128AFA1A900B644DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -313,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -335,10 +459,9 @@
 				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,10 +487,9 @@
 				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,6 +527,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CC00B6D028B2546400B29F42 /* XCRemoteSwiftPackageReference "CombineDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/combineopensource/CombineDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
 		CC6D8D9128AFB101004956A2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -424,6 +554,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CC00B6D128B2546400B29F42 /* CombineDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC00B6D028B2546400B29F42 /* XCRemoteSwiftPackageReference "CombineDataSources" */;
+			productName = CombineDataSources;
+		};
 		CC6D8D9228AFB101004956A2 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CC6D8D9128AFB101004956A2 /* XCRemoteSwiftPackageReference "realm-swift" */;
