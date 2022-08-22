@@ -13,25 +13,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    // MARK: - Private variables
-    
-    let appCoordinator = AppCoordinator()
 
     // MARK: - Functions
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        appWindow.windowScene = windowScene
-        
-        appCoordinator.start()
 
-        appWindow.rootViewController = appCoordinator.rootViewController
-        appWindow.makeKeyAndVisible()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        self.window = UIWindow(windowScene: windowScene)
+
+        let mainViewController = MainViewController(viewModel: MainViewControllerViewModel())
         
-        window = appWindow
+        let rootNavigationController = UINavigationController(rootViewController: mainViewController)
+        rootNavigationController.navigationBar.prefersLargeTitles = true
+        rootNavigationController.navigationBar.tintColor = .black
+        
+        self.window?.rootViewController = rootNavigationController
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}

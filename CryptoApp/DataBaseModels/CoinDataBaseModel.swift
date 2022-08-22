@@ -23,6 +23,7 @@ final class CoinDataBaseModel: Object {
     @Persisted var coinMinPrice: Double
     @Persisted var coinMaxPrice: Double
     @Persisted var coinImageURL: String?
+    @Persisted var coinPriceHistory: List<Double>
     @Persisted var priceMovementType: String = PriceMovementType.none.rawValue
     @Persisted var coinLastPrice: Double {
         didSet {

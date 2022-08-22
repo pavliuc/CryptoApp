@@ -28,7 +28,6 @@ final class CoinCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         cellUI.setupLayout(in: self)
-        setupBindings()
     }
     
     required init?(coder: NSCoder) {
@@ -75,21 +74,24 @@ final class CoinCollectionViewCell: UICollectionViewCell {
     
     func setCellCoin(coin: CoinDataBaseModel) {
         cellCoin = coin
+        setupBindings()
     }
     
     // MARK: - Private functions
     
     private func updatePriceViewBackgroundColor(movementType: PriceMovementType) {
         
+        cellUI.coinPriceView.setLabelTextColor(color: .white)
         switch movementType {
             case .increased:
-                self.cellUI.coinPriceView.backgroundColor = .green
+                cellUI.coinPriceView.backgroundColor = .green
             
             case .decreased:
-                self.cellUI.coinPriceView.backgroundColor = .red
+                cellUI.coinPriceView.backgroundColor = .red
             
             case .none:
-                self.cellUI.coinPriceView.backgroundColor = .clear
+                cellUI.coinPriceView.backgroundColor = .clear
+                cellUI.coinPriceView.setLabelTextColor(color: .black)
         }
     }
 }

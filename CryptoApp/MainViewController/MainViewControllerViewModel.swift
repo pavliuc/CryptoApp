@@ -19,11 +19,12 @@ final class MainViewControllerViewModel {
     // MARK: - Internal variables
     
     @Published var coins: [Coin] = []
+    @Published var selectedCoin: CoinDataBaseModel!
+    @Published var dataBaseCoinModels: [CoinDataBaseModel] = []
     
     // MARK: - Lifecycle
     
     init() {
-        
         cryptoAPI = Crypto(delegate: self)
         setupBindings()
     }
@@ -35,6 +36,13 @@ final class MainViewControllerViewModel {
         $coins.sink(receiveValue: { receivedValue in
             
             DataBaseManager.shared().receivedCoinsFromAPI = receivedValue
+        }).store(in: &subscriptions)
+        
+        DataBaseManager.shared().$dataBaseCoins.sink(receiveValue: { [weak self] receivedValue in
+            guard let self = self else { return }
+            
+            self.dataBaseCoinModels = receivedValue
+            DataBaseManager.shared().startCoinsPriceMonitoring()
         }).store(in: &subscriptions)
     }
     
@@ -62,6 +70,14 @@ final class MainViewControllerViewModel {
                 self.getCoinsFromAPI()
             }
         }).store(in: &subscriptions)
+    }
+    
+    func userSelectedCoin(coin: CoinDataBaseModel) {
+        selectedCoin = coin
+    }
+    
+    func getCoinCodeForIndex(index: Int) -> CoinDataBaseModel? {
+        return dataBaseCoinModels[index]
     }
 }
 

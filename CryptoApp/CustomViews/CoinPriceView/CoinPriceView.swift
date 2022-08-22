@@ -52,5 +52,9 @@ final class CoinPriceView: UIView {
     func setValue(value: Double) {
         coinPriceLabel.text = "$ \(value)"
     }
+    
+    func setLabelTextColor(color: UIColor) {
+        coinPriceLabel.textColor = color
+    }
 }
 
